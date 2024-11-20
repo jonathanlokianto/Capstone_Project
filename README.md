@@ -1,7 +1,7 @@
 # Capstone_Project
 Proyek Akhir Capstone: Machine Learning
 
-<p align="center"><a><img src="app/src/main/res/drawable/logocapstone.png" width="600"></a></p> 
+<p align="center"><a><img src="app/src/main/res/drawable/logocapstone.png" width="400"></a></p> 
 <h1 align="center"><b>Dektes</b></h1>
 
 <h4 align="center">Pengembangan Aplikasi Deteksi Stres Berbasis Analisis Ekspresi Wajah</h4>
