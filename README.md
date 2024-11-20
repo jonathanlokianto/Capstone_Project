@@ -1,5 +1,4 @@
 # Capstone_Project
-Proyek Akhir Capstone: Machine Learning
 
 <p align="center"><a><img src="app/src/main/res/drawable/logocapstone.png" width="400"></a></p> 
 <h1 align="center"><b>Dektes</b></h1>
