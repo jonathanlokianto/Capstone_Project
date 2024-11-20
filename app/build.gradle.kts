@@ -33,9 +33,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+<<<<<<< HEAD
     buildFeatures {
         viewBinding = true
     }
+=======
+>>>>>>> 84a43a899f467548faa5f73a14846ce813d0108a
 }
 
 dependencies {
@@ -45,6 +48,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     testImplementation(libs.junit)
@@ -56,5 +60,10 @@ dependencies {
     implementation(libs.material)
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 
 }

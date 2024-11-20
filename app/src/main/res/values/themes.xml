@@ -6,10 +6,13 @@
     </style>
 
     <style name="Theme.Capstone" parent="Base.Theme.Capstone" />
+<<<<<<< HEAD
     <style name="Theme.Capstone.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Capstone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.Capstone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+=======
+>>>>>>> 84a43a899f467548faa5f73a14846ce813d0108a
 </resources>
