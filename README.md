@@ -2,13 +2,11 @@
 Proyek Akhir Capstone: Machine Learning
 
 <p align="center"><a><img src="app/src/main/res/drawable/logo.png" width="600"></a></p> 
-<h1 align="center"><b>Furriend</b></h1>
+<h1 align="center"><b>Dektes</b></h1>
 
-<h4 align="center">SISTEM INFORMASI LAYANAN PET SHOP DIGITAL</h4>
+<h4 align="center">Pengembangan Aplikasi Deteksi Stres Berbasis Analisis Ekspresi Wajah</h4>
 
-Furriend merupakan sebuah konsep yang menggunakan model pengembangan usaha pet shop and care digital berbasis website pada usaha-usaha pet shop lokal milik masyarakat. Furriend memiliki konsep yang lebih modern dalam memberikan pelayanan jasa dan barang kepada pelanggan dengan ciri khasnya tersendiri. Bentuk pelayanan jasa atau barang yang ditawarkan oleh Furriend sangat lengkap.
-
-Beberapa layanan jasa yang disediakan seperti menyediakan informasi tentang kebutuhan hewan peliharaan dan memberikan tanggapan terhadap permasalahan yang dialami pengguna melalui kontak. Selanjutnya untuk pelayanan barang menyediakan produk kebutuhan peliharaan hewan mulai dari makanan, aksesoris, dan mainan. Selain itu, ciri khas dari website Furriend adalah mengutamakan kualitas pemberian layanan kepada pelanggannya agar mereka dapat merasakan kenyamanan terbaik.
+Stress is a recurring issue that affects people across all ages and generations. It may start as an insignificant issue, but it can prove a health hazard. Despite this, many people may not realize they are stressed until it begins to impact their daily lives. Some may also have no time to consult with psychologists about their stress. For our project, we aim to create an application that helps make self-assessment easy and available for everyone. Our application works by analyzing users’ images that were captured while they answered surveys. It then calculates and evaluates whether the user is currently experiencing high stress or low stress. Using the capability of Deep Learning on past data, our app can then make an accurate detection and give a definite answer. Through our application, we strive to provide a solution that helps people become aware of their stress conditions and gives simple guidance to relieve them. We want to contribute to increased mental health awareness among Gen Z and create an environment that supports emotional well-being in everyday life. We also aim to create a safe environment within the application where everyone can easily and accurately track their mental condition.
 
 * Sign Up
 ![](https://raw.githubusercontent.com/alvinfebrianto/Furriend-Laravel/img/%5B1%5D%20Register.png)
