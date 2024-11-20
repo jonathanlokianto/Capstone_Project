@@ -1,7 +1,7 @@
 # Capstone_Project
 Proyek Akhir Capstone: Machine Learning
 
-<p align="center"><a><img src="[public/assets/imgs/logo/logo.png](https://github.com/jonathanlokianto/Capstone_Project/blob/MD/app/src/main/res/drawable/logo.png)" width="600"></a></p> 
+<p align="center"><a><img src="app/src/main/res/drawable/logo.png" width="600"></a></p> 
 <h1 align="center"><b>Furriend</b></h1>
 
 <h4 align="center">SISTEM INFORMASI LAYANAN PET SHOP DIGITAL</h4>
