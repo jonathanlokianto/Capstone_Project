@@ -32,3 +32,24 @@ API ini memungkinkan pengguna untuk mengelola artikel, termasuk membuat, membaca
         }
     ]
 }
+
+### 2. Mendapatkan Semua Artikel dari ID
+
+- **URL**: `/articles/:ID`
+- **Metode**: `GET`
+- **Deskripsi**: Mengambil semua artikel dari database berdasarkan id.
+- **Respons**:
+  - **200 OK**: Mengembalikan daftar artikel.
+  - **404 Not Found**: Tidak ada artikel dengan id tersebut.
+
+#### Contoh Respons hanya dengan id 1
+```json
+{
+    "status": "success",
+    "data": {
+        "id": 1,
+        "title": "Judul Artikel Pertama",
+        "content": "Ini adalah isi dari artikel pertama.",
+        "image_url": "http://example.com/image1.jpg"
+    }
+}
