@@ -2,6 +2,9 @@
 
 API ini memungkinkan pengguna untuk mengelola artikel, termasuk membuat, membaca, memperbarui, dan menghapus artikel. API ini dibangun menggunakan Node.js, Express, dan MySQL.
 
+API ini dapat diakses melalui URL berikut:  
+[Link ke API Artikel](https://nodeapi.xarca.cloud)
+
 ## Daftar Endpoint
 
 ### 1. Mendapatkan Semua Artikel
