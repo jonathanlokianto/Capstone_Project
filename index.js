@@ -9,7 +9,7 @@ const db = mysql.createConnection({
     host: 'localhost', // Ganti dengan IP publik Cloud SQL Anda
     user: 'xare7693_artikel',       // Ganti dengan username Cloud SQL Anda
     password: '@AdminGanteng123',   // Ganti dengan password Cloud SQL Anda
-    database: 'artikel'       // Ganti dengan nama database Anda
+    database: 'xare7693_artikel'       // Ganti dengan nama database Anda
 });
 
 // Cek koneksi
@@ -63,23 +63,34 @@ app.get('/articles/:id', (req, res) => {
     });
 });
 
+
 // Endpoint untuk menambahkan artikel
 app.post('/articles', (req, res) => {
-    const { id, title, content, image_url } = req.body;
+    const { title, content, image_url } = req.body;
 
     // Validasi sederhana
-    if (!id || !title || !content || !image_url) {
+    if (!title || !content || !image_url) {
         return res.status(400).json({ status: 'error', message: 'All fields are required' });
     }
 
-    const query = 'INSERT INTO artikel (id, title, content, image_url) VALUES (?, ?, ?, ?)';
-    db.query(query, [id, title, content, image_url], (err, results) => {
+    // Mendapatkan ID terakhir
+    db.query('SELECT MAX(id) AS maxId FROM artikel', (err, results) => {
         if (err) {
-            console.error('Error inserting article:', err);
+            console.error('Error fetching max ID:', err);
             return res.status(500).json({ status: 'error', message: 'Internal Server Error' });
         }
 
-        res.status(201).json({ status: 'success', message: 'Article added successfully', articleId: results.insertId });
+        const newId = results[0].maxId ? results[0].maxId + 1 : 1; // Jika tidak ada ID, mulai dari 1
+
+        const query = 'INSERT INTO artikel (id, title, content, image_url) VALUES (?, ?, ?, ?)';
+        db.query(query, [newId, title, content, image_url], (err, results) => {
+            if (err) {
+                console.error('Error inserting article:', err);
+                return res.status(500).json({ status: 'error', message: 'Internal Server Error' });
+            }
+
+            res.status(201).json({ status: 'success', message: 'Article added successfully', articleId: newId });
+        });
     });
 });
 
