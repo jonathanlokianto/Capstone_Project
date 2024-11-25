@@ -6,9 +6,9 @@ app.use(express.json());
 
 // Koneksi ke database MySQL di Cloud SQL
 const db = mysql.createConnection({
-    host: '34.101.88.90', // Ganti dengan IP publik Cloud SQL Anda
-    user: 'root',       // Ganti dengan username Cloud SQL Anda
-    password: '123',   // Ganti dengan password Cloud SQL Anda
+    host: 'localhost', // Ganti dengan IP publik Cloud SQL Anda
+    user: 'xare7693_artikel',       // Ganti dengan username Cloud SQL Anda
+    password: '@AdminGanteng123',   // Ganti dengan password Cloud SQL Anda
     database: 'artikel'       // Ganti dengan nama database Anda
 });
 
