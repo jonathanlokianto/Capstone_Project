@@ -41,7 +41,14 @@ CREATE TABLE `artikel` (
 INSERT INTO `artikel` (`id`, `title`, `content`, `image_url`) VALUES
 (1, 'Judul Artikel Pertama', 'Ini adalah isi dari artikel pertama.', 'http://example.com/image1.jpg'),
 (2, 'Judul Artikel Kedua', 'Ini adalah isi dari artikel kedua.', 'http://example.com/image2.jpg'),
-(3, 'Artikel Ketiga', 'Aku sayang shiroko', 'https://static.wikitide.net/bluearchivewiki/6/63/Shiroko.png');
+(3, 'Judul Artikel Ketiga', 'Ini adalah isi dari artikel ketiga.', 'http://example.com/image3.jpg'),
+(4, 'Judul Artikel Keempat', 'Ini adalah isi dari artikel keempat.', 'http://example.com/image4.jpg'),
+(5, 'Judul Artikel Kelima', 'Ini adalah isi dari artikel kelima.', 'http://example.com/image5.jpg'),
+(6, 'Judul Artikel Keenam', 'Ini adalah isi dari artikel keenam.', 'http://example.com/image6.jpg'),
+(7, 'Judul Artikel Ketujuh', 'Ini adalah isi dari artikel ketujuh.', 'http://example.com/image7.jpg'),
+(8, 'Judul Artikel Kedelapan', 'Ini adalah isi dari artikel kedelapan.', 'http://example.com/image8.jpg'),
+(9, 'Judul Artikel Kesembilan', 'Ini adalah isi dari artikel kesembilan.', 'http://example.com/image9.jpg'),
+(10, 'Judul Artikel Kesepuluh', 'Ini adalah isi dari artikel kesepuluh.', 'http://example.com/image10.jpg');
 
 --
 -- Indexes for dumped tables
