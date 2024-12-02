@@ -10,12 +10,14 @@
         android:name="com.dicoding.capstone.ui.ui.HomeFragment"
         android:label="@string/home"
         tools:layout="@layout/fragment_home" >
+
         <action
-            android:id="@+id/action_nav_home_to_nav_profile"
-            app:destination="@id/nav_profile" />
-        <action
-            android:id="@+id/action_nav_home_to_nav_article"
-            app:destination="@id/nav_article" />
+            android:id="@+id/action_nav_home_to_nav_detail_article"
+            app:destination="@id/nav_detail_article">
+            <argument
+                android:name="id"
+                app:argType="string" />
+        </action>
     </fragment>
 
     <fragment
@@ -23,12 +25,14 @@
         android:name="com.dicoding.capstone.ui.ui.ArticleFragment"
         android:label="@string/article"
         tools:layout="@layout/fragment_article" >
+
         <action
-            android:id="@+id/action_nav_article_to_nav_profile"
-            app:destination="@id/nav_profile" />
-        <action
-            android:id="@+id/action_nav_article_to_nav_home"
-            app:destination="@id/nav_home" />
+            android:id="@+id/action_nav_article_to_nav_detail_article"
+            app:destination="@id/nav_detail_article">
+            <argument
+                android:name="id"
+                app:argType="string" />
+        </action>
     </fragment>
 
     <fragment
@@ -36,11 +40,13 @@
         android:name="com.dicoding.capstone.ui.ui.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_nav_profile_to_nav_home"
-            app:destination="@id/nav_home" />
-        <action
-            android:id="@+id/action_nav_profile_to_nav_article"
-            app:destination="@id/nav_article" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail_article"
+        android:name="com.dicoding.capstone.ui.ui.DetailArticleFragment"
+        android:label="@string/article"
+        tools:layout="@layout/fragment_detail_article" />
+
+
 </navigation>
