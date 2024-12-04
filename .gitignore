@@ -1,0 +1,11 @@
+# Ignore app.yaml
+app.yaml
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore service account credentials
+service.json
+
+# Ignore SQL files
+database.sql
