@@ -1,0 +1,16 @@
+# Menggunakan image resmi Python 3.9 sebagai base image
+FROM python:3.9-slim
+
+# Set working directory di dalam container
+WORKDIR /app
+
+# Menyalin requirements.txt ke dalam container
+COPY . .
+
+# Install dependencies dari requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose port 5000 untuk akses aplikasi Flask
+EXPOSE 5000
+
+CMD ["python", "app.py"]
